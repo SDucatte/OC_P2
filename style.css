@@ -1,0 +1,165 @@
+.all
+{
+	display: flex;
+	flex-direction: row;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.photo
+{
+	justify-content: center;
+	align-content: center;
+	object-fit: cover;
+	height: 10em;
+	width: auto;
+}
+
+.lisere
+{
+	display: flex;
+	flex-direction: column;
+	width: 20%;
+	background-color: #227dd1;
+	margin-left: 10%;
+	border: 2px solid black;
+	border-right: 0em;
+
+}
+
+.lisere h3
+{
+	background-color: #808080;
+	text-align: center;
+	line-height: 40px;
+	height: 50px;
+	
+}
+
+.info
+{
+	list-style-type: none;
+	justify-items: start;
+	padding: 5%;
+	text-align: justify;
+	line-height: 150%;
+}
+
+.icones
+{
+	display: flex;
+	justify-content: space-between;
+	top: 50%;
+	margin-top: 10px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.hobby
+{
+
+	position: relative;
+	vertical-align: bottom;
+	margin-top: 500px;
+}
+
+.main
+{
+	display: flex;
+	flex-direction: column;
+	margin-right: 10%;
+	padding-left: 30px;
+	width: 600px;
+	border: 2px solid black;
+	
+}
+
+header
+{
+	height: 210px;	
+}
+
+.main h3
+{
+	display: flex;
+	flex-direction: column;
+	border-bottom: 3px solid #227dd1;
+	line-height: 1.5em;
+	font-size: 1.5em;
+}
+
+.main .section
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.section__item
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: auto;
+	margin-top: 2px;
+}
+
+.section__item__date
+{
+	display: flex;
+    flex-direction: column;
+	width: 30%;
+}
+
+.section article
+{
+	margin: 20px;
+}
+.section__item h4
+{
+	font-size: 1.22em;
+	vertical-align: top;
+	margin: 0px;
+	padding: 0%;
+}
+.section__item__description
+{
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	padding: 0px;
+	margin: 0px;
+	margin-top: 0px;
+	margin-block-start: 0px;
+	margin-block-end: 0px;
+}
+
+
+.section__recommandations div
+{
+	display: flex;
+	flex-direction: row;
+}
+
+.section__recommandations article
+{
+	margin: 10px;
+}
+strong
+{
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+em
+{
+	font-style: italic;
+}
+
+ul
+{
+	list-style-type: none;
+	margin-left: 0;
+	text-align: justify;
+	vertical-align: 1.5;
+	padding: 0;
+	margin: 0;
+}
