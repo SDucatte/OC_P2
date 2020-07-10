@@ -143,6 +143,12 @@ header
 {
 	margin: 10px;
 }
+
+.section__item__date
+{
+	margin: 0px;
+	padding: 0px;
+}
 strong
 {
 	font-weight: bold;
