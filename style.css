@@ -1,8 +1,18 @@
+@font-face
+{
+	font-family: "timeless";
+	src: url("Timeless.tff") format("ttf"), 
+	url("Timeless-Bold.tff") format("ttf");
+
+	font-family : "negara";
+	src: url("NegaraSerif-HairlineItalic.otf") format("otf")
+
+}
 .all
 {
 	display: flex;
 	flex-direction: row;
-	font-family: Georgia, 'Times New Roman', Times, serif;
+	
 }
 
 .photo
@@ -75,7 +85,8 @@
 
 header
 {
-	height: 210px;	
+	height: 210px;
+	font-family: "timeless";	
 }
 
 .main h3
@@ -168,4 +179,9 @@ ul
 	vertical-align: 1.5;
 	padding: 0;
 	margin: 0;
+}
+
+.fas.fa-suitcase
+{
+color: blue;
 }
