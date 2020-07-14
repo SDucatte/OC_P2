@@ -3,16 +3,11 @@
 	font-family: "timeless";
 	src: url("Timeless.tff") format("ttf"), 
 	url("Timeless-Bold.tff") format("ttf");
-
-	font-family : "negara";
-	src: url("NegaraSerif-HairlineItalic.otf") format("otf")
-
 }
 .all
 {
 	display: flex;
 	flex-direction: row;
-	
 }
 
 .photo
@@ -93,7 +88,7 @@ header
 {
 	display: flex;
 	flex-direction: row;
-	border-bottom: solid #1E42E3;
+	border-bottom: solid #2a72d6;
 	margin-right: 5%;
 	line-height: 1.5em;
 	font-size: 1.5em;
@@ -149,14 +144,17 @@ header
 {
 	display: flex;
 	flex-direction: row;
+	align-content: space-between;
+
 }
 
 .section__recommandations article
 {
 	margin: 10px;
+	padding-right: 50px;
 }
 
-.section__item__date
+.section__item__date p
 {
 	margin: 0px;
 	padding: 0px;
@@ -190,11 +188,17 @@ ul
 
 .prénom
 {
-	color: #6f727e;
+	color: #2a72d6;
 	background-color: white;
 }
 
 span
 {
-	border-bottom: 3px solid #1E42E3;	
+	border-bottom: 3px solid #2a72d6;	
+}
+
+.icones__dot
+{
+	margin-right: 1.5em;
+	align-content: center;
 }
