@@ -155,8 +155,10 @@ header
 
 .section__recommandations article
 {
-	margin: 10px;
-	padding-right: 50px;
+	width: max-content;
+	margin-right: 40px;
+	margin-bottom: 20px;
+
 }
 
 .section__item__date p
