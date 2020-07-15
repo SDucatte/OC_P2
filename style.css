@@ -1,8 +1,12 @@
 @font-face
 {
-	font-family: "timeless";
-	src: url("Timeless.tff") format("ttf"), 
-	url("Timeless-Bold.tff") format("ttf");
+	font-family: "KaushanScript-Regular";
+	src: url("font_awesome/KaushanScript-Regular.otf") format("otf");
+}
+
+body
+{
+	font-family: "KaushanScript-Regular", Arial, Helvetica, sans-serif;
 }
 .all
 {
@@ -81,7 +85,7 @@
 header
 {
 	height: 210px;
-	font-family: "timeless";	
+	font-family: "KaushanScript-Regular",Arial, Helvetica, sans-serif;	
 }
 
 .main h3
@@ -92,6 +96,7 @@ header
 	margin-right: 5%;
 	line-height: 1.5em;
 	font-size: 1.5em;
+	
 }
 
 .main .section
@@ -159,6 +164,12 @@ header
 	margin: 0px;
 	padding: 0px;
 }
+
+.section__item__description p
+{
+	margin: 0px;
+	padding: 0px;
+}
 strong
 {
 	font-weight: bold;
@@ -186,7 +197,7 @@ ul
 	
 }
 
-.prénom
+.prenom
 {
 	color: #2a72d6;
 	background-color: white;
@@ -199,6 +210,27 @@ span
 
 .icones__dot
 {
-	margin-right: 1.5em;
+	margin-right: 1em;
 	align-content: center;
+	margin-top: 0em;
+}
+
+.main .fas
+{
+	color: #2a72d6;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+
+.main .far
+{
+	color: #2a72d6;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+
+.header__titre
+{
+	color: #2a72d6;
+	border-bottom: 0em;
 }
