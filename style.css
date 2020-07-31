@@ -1,3 +1,16 @@
+
+/*
+ 
+ ########   #######  ##       ####  ######  ######## 
+ ##     ## ##     ## ##        ##  ##    ## ##       
+ ##     ## ##     ## ##        ##  ##       ##       
+ ########  ##     ## ##        ##  ##       ######   
+ ##        ##     ## ##        ##  ##       ##       
+ ##        ##     ## ##        ##  ##    ## ##       
+ ##         #######  ######## ####  ######  ######## 
+ 
+*/
+
 @font-face
 {
 	font-family: "MontSerrat";
@@ -11,12 +24,65 @@
 	font-weight: normal;
 }
 
-.all
+em
+{
+	font-style: italic;
+}
+
+ul
+{
+	list-style-type: none;
+	margin-left: 0;
+	text-align: justify;
+	vertical-align: 1.5;
+	padding: 0;
+	margin: 0;
+}
+
+/*
+ 
+ ##     ## ########    ###    ########  ######## ########  
+ ##     ## ##         ## ##   ##     ## ##       ##     ## 
+ ##     ## ##        ##   ##  ##     ## ##       ##     ## 
+ ######### ######   ##     ## ##     ## ######   ########  
+ ##     ## ##       ######### ##     ## ##       ##   ##   
+ ##     ## ##       ##     ## ##     ## ##       ##    ##  
+ ##     ## ######## ##     ## ########  ######## ##     ## 
+ 
+*/
+
+header
 {
 	display: flex;
-	flex-direction: row;
-	font-family: "MontSerrat";
-}	
+	width: 1330px;
+	border: 2px solid black;
+	border-bottom: none;
+}
+
+.header
+{
+	height: 210px;
+	padding-left: 30px;
+	width: 600px;
+	margin: 0em;
+}
+
+figure
+{
+	width: 600px;
+	background-color: #2a72d6;
+	margin: 0em;
+	padding: 0em;
+	display: table-cell;
+	vertical-align: center;
+}
+
+img
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 .photo
 {
@@ -27,15 +93,46 @@
 	width: auto;
 }
 
+.header__titre
+{
+		color: #2a72d6;
+		border-bottom: 0em;
+}
+
+.prenom
+{
+	color: #2a72d6;
+	background-color: white;
+}
+
+span
+{
+	border-bottom: 3px solid #2a72d6;	
+}
+
+
+/*
+ 
+ ##       ####  ######  ######## ########  ######## 
+ ##        ##  ##    ## ##       ##     ## ##       
+ ##        ##  ##       ##       ##     ## ##       
+ ##        ##   ######  ######   ########  ######   
+ ##        ##        ## ##       ##   ##   ##       
+ ##        ##  ##    ## ##       ##    ##  ##       
+ ######## ####  ######  ######## ##     ## ######## 
+ 
+*/
+
 .lisere
 {
 	display: flex;
 	flex-direction: column;
 	width: 20%;
 	background-color: #2a72d6;
-	margin-left: 10%;
 	border: 2px solid black;
-	border-right: 0em;
+	border-right: none;
+	height: 1508px;
+	border-top: 2px solid #2a72d6;
 }
 
 .lisere h3
@@ -67,7 +164,7 @@
 {
 	position: relative;
 	vertical-align: bottom;
-	margin-top: 500px;
+	margin-top: 650px;
 }
 
 .icones
@@ -80,6 +177,18 @@
 	margin-right: 10%;
 }
 
+/*
+ 
+ ##     ##    ###    #### ##    ## 
+ ###   ###   ## ##    ##  ###   ## 
+ #### ####  ##   ##   ##  ####  ## 
+ ## ### ## ##     ##  ##  ## ## ## 
+ ##     ## #########  ##  ##  #### 
+ ##     ## ##     ##  ##  ##   ### 
+ ##     ## ##     ## #### ##    ## 
+ 
+*/
+
 .main
 {
 	display: flex;
@@ -88,28 +197,11 @@
 	padding-left: 30px;
 	width: 700px;
 	border: 2px solid black;
+	height: 1508px;
+	border-top: none;
+	border-left: none;
 }
 
-header
-{
-	height: 210px;
-}
-
-.header__titre
-{
-	color: #2a72d6;
-	border-bottom: 0em;
-}
-.prenom
-{
-	color: #2a72d6;
-	background-color: white;
-}
-
-span
-{
-	border-bottom: 3px solid #2a72d6;	
-}
 
 .main h3
 {
@@ -211,20 +303,6 @@ span
 	margin-bottom: 20px;
 }
 
-em
-{
-	font-style: italic;
-}
-
-ul
-{
-	list-style-type: none;
-	margin-left: 0;
-	text-align: justify;
-	vertical-align: 1.5;
-	padding: 0;
-	margin: 0;
-}
 
 .main .fas
 {
@@ -240,33 +318,67 @@ ul
 	margin-top: 5px;
 }
 
+.all
+{
+	display: flex;
+	width: 3000px;
+	font-family: "MontSerrat";
+}	
+
+/*
+ 
+ ########    ###    ########  ##       ######## ######## 
+    ##      ## ##   ##     ## ##       ##          ##    
+    ##     ##   ##  ##     ## ##       ##          ##    
+    ##    ##     ## ########  ##       ######      ##    
+    ##    ######### ##     ## ##       ##          ##    
+    ##    ##     ## ##     ## ##       ##          ##    
+    ##    ##     ## ########  ######## ########    ##    
+ 
+*/
+
 @media screen and (max-width: 800px)
 {
+	header
+	{
+		border: hidden;
+		width: 700px;
+		display: flex;
+		flex-direction: row-reverse;
+	
+	}
+
 	figure{
-		display: none;
-		margin: 0px;
-		padding: 0px;
+		display: flex;
+	
+		background-color: white;
+	
+
 	}
 
 	.all
 	{
 		display: flex;
 		flex-direction: column;
+		width: 700px;
+		font-size: 1rem;
+		
 	}
 
 	.lisere
 	{
 		order: 2;
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		width: 100%;
 		margin: 20px;
 		margin-top: 0px;
 		background-color: white;
 		align-items: center;
-		border: 2px solid black;
-		border-top: 2px solid black;
-		padding-right: 30px;
+		padding-left: 30px;
+		border: hidden;
+		height: 320px;
+		
 	}
 
 	.lisere section
@@ -276,7 +388,15 @@ ul
 	padding: 0px;
 	margin: 10px;
 	width: 30%;
+	height: 320px;
 	font-size: 1.5vw;
+	vertical-align: top;
+	}
+
+	.lisere h3
+	{
+		background-color: #2a72d6;
+		color: black;
 	}
 
 	.main
@@ -287,6 +407,9 @@ ul
 		margin-bottom: 0px;
 		border-bottom: 0px;
 		font-size: 1.5vw;
+		border: hidden;
+		height: auto;
+		
 	}
 
 	.main .section .article
@@ -295,11 +418,74 @@ ul
 		justify-content: flex-start;
 		align-items: flex-start;
 		width: auto;
+		margin: 10px;
+	}
+
+	.section__item
+	{
+		justify-content: center;
+		width: 700px;
 	}
 
 	.main .section__item__date
 	{
 		width: 150px;
 	}
+	.section__recommandations div
+	{
+	display: flex;
+	align-items: center;
+	}
+}
 
+/*
+ 
+ ########  ##     ##  #######  ##    ## ######## 
+ ##     ## ##     ## ##     ## ###   ## ##       
+ ##     ## ##     ## ##     ## ####  ## ##       
+ ########  ######### ##     ## ## ## ## ######   
+ ##        ##     ## ##     ## ##  #### ##       
+ ##        ##     ## ##     ## ##   ### ##       
+ ##        ##     ##  #######  ##    ## ######## 
+ 
+*/
+
+@media screen and (max-width: 480px)
+{
+	header
+	{
+		width: 460px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		height: 280px;
+	}
+
+	.all
+	{
+		width: 460px;
+		
+	}
+
+	.all h3
+	{
+		font-size: 12em;
+	}
+	.main
+	{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.icones__dot
+	{
+		display: none;
+	}
+
+	.section__item article
+	{
+		margin: 10px;
+		overflow: auto;
+	}
 }
