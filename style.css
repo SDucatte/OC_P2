@@ -348,21 +348,15 @@ span
 		width: 420px;
 		display: flex;
 		flex-direction: row-reverse;
-		margin: 0em;
-		padding: 0em;
 		margin-right: 0em;
 	}
 	
 	figure{
 		display: flex;
 		background-color: white;
-		width: 130px;
+		width: 100px;
 		height: 120px;
-	}
-	
-	img
-	{
-		background-position: bottom;
+		background-position: right;
 	}
 	
 	.all
@@ -370,14 +364,17 @@ span
 		display: flex;
 		flex-direction: column;
 		width: 680px;
+		margin-left: 40px;
+		margin-right: 20px;
 	}
 	
 	.lisere
 	{
 		order: 2;
 		display: flex;
-		flex-direction: row;
-		width: 620px;
+		flex-direction: column;
+		
+		width: 710px;
 		margin-left: 0em;
 		margin-top: 0px;
 		background-color: white;
@@ -404,6 +401,11 @@ span
 		color: black;
 		height: auto;	
 	}
+
+	.lisere .info
+	{
+		text-align: center;
+	}
 	
 	.main
 	{
@@ -414,7 +416,7 @@ span
 		padding: 10px;
 		border: hidden;
 		height: auto;
-		font-size: 0.8em;
+		font-size: 1em;
 	}
 	
 	.main h3
@@ -432,6 +434,7 @@ span
 	.main .section__item__date
 	{
 		width: 120px;
+		margin-right: 25px;
 	}
 	
 	.section__recommandations article
@@ -439,6 +442,13 @@ span
 		margin: 20px;
 		padding: 5px;
 		margin-top: 2px;
+		width: auto;
+	}
+
+	.section__recommandations ul
+	{
+		width: 300px;
+		line-height: 1.6em;
 	}
 	
 	.section__item__description
@@ -446,6 +456,10 @@ span
 		width: 720px;	
 	}
 	
+	.section__item__description p
+	{
+		line-height: 1.6em;
+	}
 	.icones
 	{
 		display: flex;
@@ -469,25 +483,30 @@ span
 {
 	header
 	{
-		width: 250px;
+		width: 400px;
+		max-width: 425px;
 		display: flex;
 		flex-direction: column;
 		text-align: left;
 		height: 350px;
 		margin: 0px;
 		font-size: 1rem;
+		overflow: hidden;
 	}
 	
 	figure
 	{
 		background-position: left;
-		width: 250px;
+		width: 400px;
+		max-width: 425px;
 	}
 	
 	.all
 	{
+		max-width: 425px;
 		width: 400px;
 		line-height: 50px;
+		overflow: hidden;
 	}
 	
 	.all h3
@@ -503,8 +522,11 @@ span
 		line-height: 40px;
 		font-size: 0.8rem;
 		padding: 0em;
-		width: 350px;
+		width: 400px;
 		margin: 5px;
+		max-width: 425px;
+		margin-right: 0px;
+		margin-left: 0px;
 	}
 	
 	.icones__dot
@@ -517,14 +539,18 @@ span
 		width: 250px;
 		display: flex;
 		flex-direction: column;
+		
+	
+		max-width: 300px;
 	}
 	
 	.section__item article
 	{
 		margin: 5px;
-		overflow: scroll;
-		width: 250px;
+		
+		width: 400px;
 		height: 300px;
+		max-width: 425px;
 	}
 	
 	.section__item div
@@ -542,20 +568,46 @@ span
 	
 	.section__item li
 	{
-		line-height: 1.5em;
+		line-height: 2.2em;
+	}
+
+	.section__item__description
+	{
+		width: 400px;
+	
 	}
 	
 	.section__item__description p
 	{
 		width: 350px;
+		line-height: 2.2em;
+	}
+
+	.section__item__description h5
+	{
+		width: 350px;
+
 	}
 	.section__recommandations div
 	{
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		align-items: left;
+		margin-top: 0px;
+		padding-top: 0px;
 	}
 	
+	.section__recommandations h4
+	{
+		margin: 5px;
+		margin-left: 0px;
+	}
+
+	.section__recommandations li
+	{
+		line-height: 2.2em;
+	}
+
 	.lisere
 	{
 		display: flex;
@@ -591,7 +643,10 @@ span
 	{
 		width: 350px;
 		text-align: center;
-		
+		max-width: 425px;
+		display: flex;
+		margin-left: 20px;
+		margin-right: 20px;
 	}
 }
 	
