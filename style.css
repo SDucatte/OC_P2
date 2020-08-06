@@ -39,7 +39,17 @@ ul
 	margin: 0;
 }
 
+/*
 
+##          ###    ########  ########  #######  ########        ##     #####    #######  ##        ########  ##     ##          ##   ##        ##          #####   ########  ##     ## 
+##         ## ##   ##     ##    ##    ##     ## ##     ##     ####    ##   ##  ##     ## ##    ##  ##     ##  ##   ##         ####   ##    ##  ##    ##   ##   ##  ##     ##  ##   ##  
+##        ##   ##  ##     ##    ##    ##     ## ##     ##       ##   ##     ##        ## ##    ##  ##     ##   ## ##            ##   ##    ##  ##    ##  ##     ## ##     ##   ## ##   
+##       ##     ## ########     ##    ##     ## ########        ##   ##     ##  #######  ##    ##  ########     ###             ##   ##    ##  ##    ##  ##     ## ########     ###    
+##       ######### ##           ##    ##     ## ##              ##   ##     ## ##        ######### ##          ## ##            ##   ######### ######### ##     ## ##          ## ##   
+##       ##     ## ##           ##    ##     ## ##              ##    ##   ##  ##              ##  ##         ##   ##           ##         ##        ##   ##   ##  ##         ##   ##  
+######## ##     ## ##           ##     #######  ##            ######   #####   #########       ##  ##        ##     ##        ######       ##        ##    #####   ##        ##     ## 
+
+*/
 /*
 
 ##     ## ########    ###    ########  ######## ########  
@@ -52,47 +62,42 @@ ul
 
 */
 
-header
-{
-	display: flex;
-	width: 1330px;
-	border: 2px solid black;
-	border-bottom: none;
-	margin-left: 80px;
-}
 
 .header
 {
 	height: 210px;
 	padding-left: 30px;
-	width: 600px;
 	margin: 0em;
+	font-size: 1.5em;
+	width: 70%;
+	max-width: 70%;
 }
+
 
 figure
 {
-	width: 600px;
-	background-color: #2a72d6;
-	margin: 0em;
-	padding: 0em;
-	display: table-cell;
-	vertical-align: center;
+	width: 30%;
+	margin-left: 0px;
+	margin-right: 0px;
 }
 
-img
-{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.photo
+.photo_lisere
 {
 	justify-content: center;
 	align-content: center;
 	object-fit: cover;
-	height: 10em;
-	width: auto;
+	width: 250px;
+	height: 210px;
+	visibility: visible;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-position: top left;
+}
+
+.photo_main
+{
+	display: none;
 }
 
 .header__titre
@@ -129,13 +134,12 @@ span
 {
 	display: flex;
 	flex-direction: column;
-	width: 20%;
 	background-color: #2a72d6;
 	border: 2px solid black;
 	border-right: none;
-	height: 1508px;
-	border-top: hidden;
-	margin-left: 80px;
+	height: auto;
+	width: 30%;
+	max-width: 30%;
 }
 
 .lisere h3
@@ -147,6 +151,7 @@ span
 	color: #96A4B6;
 	font-weight: bold;
 }
+
 
 .info
 {
@@ -167,7 +172,7 @@ span
 {
 	position: relative;
 	vertical-align: bottom;
-	margin-top: 650px;
+	margin-top: 580px;
 }
 
 .icones
@@ -196,13 +201,11 @@ span
 {
 	display: flex;
 	flex-direction: column;
-	margin-right: 10%;
 	padding-left: 30px;
-	width: 700px;
 	border: 2px solid black;
-	height: 1508px;
-	border-top: none;
 	border-left: none;
+	width: 70%;
+	max-width: 70%;
 }
 
 
@@ -324,10 +327,395 @@ span
 .all
 {
 	display: flex;
-	width: 3000px;
+	width: 1024px;
 	font-family: "MontSerrat";
+	margin-left: 80px;
+	
 }	
 
+
+/*
+
+########  ####  ######      ########  ########  ######  ##    ## ########  #######  ########  
+##     ##  ##  ##    ##     ##     ## ##       ##    ## ##   ##     ##    ##     ## ##     ## 
+##     ##  ##  ##           ##     ## ##       ##       ##  ##      ##    ##     ## ##     ## 
+########   ##  ##   ####    ##     ## ######    ######  #####       ##    ##     ## ########  
+##     ##  ##  ##    ##     ##     ## ##             ## ##  ##      ##    ##     ## ##        
+##     ##  ##  ##    ##     ##     ## ##       ##    ## ##   ##     ##    ##     ## ##        
+########  ####  ######      ########  ########  ######  ##    ##    ##     #######  ##        
+
+*/
+
+@media screen and (min-width: 1440px)
+{
+	.header
+	{
+		font-size: 1.5em;
+		height: 320px;
+		padding-left: 30px;
+		width: 1200px;
+		margin-bottom: 100px;
+	}
+
+	.header h1
+	{
+		margin-bottom: 0px;
+		margin-top: 20px;
+	}
+
+	.header h2
+	{
+		margin-bottom: 10px;
+		margin-top: 20px;
+	}
+
+	figure
+	{
+		width: 30%;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	
+	img{
+		width: 400px;
+		height: 200px;
+		margin-top: 10%;
+		margin-bottom: 10%;
+	}
+	
+	.photo_lisere
+	{
+		justify-content: center;
+		align-content: center;
+		object-fit: cover;
+		width: 350px;
+		height: 310px;
+		visibility: visible;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		background-position: top left;
+	}
+
+	.photo_main
+	{
+		display: none;
+	}
+
+	.main
+	{
+		font-size: 1.5em;
+		width: 70ù;
+		margin-right: 0px;
+		height: auto;
+	}
+	
+	.lisere
+	{
+		font-size: 2em;
+		height: auto;
+		width: 30%;
+		margin-left: 80px;
+		
+	}
+	
+	.icones
+	{
+		font-size: 0.7em;
+		margin: 5px;
+	}
+	
+	.section__recommandations
+	{
+		flex-grow: unset;
+	}
+	
+	.section__recommandations article
+	{
+		margin: auto;
+	}
+	
+	.section
+	{
+		margin-bottom: 70px;
+	}
+	
+	.all
+	{
+		width: auto;
+	}
+}
+/*
+
+##          ###    ########  ########  #######  ########     ########  #######   #######  ########  ##     ##          ##     #####    #######  ##        ########  ##     ## 
+##         ## ##   ##     ##    ##    ##     ## ##     ##    ##    ## ##     ## ##     ## ##     ##  ##   ##         ####    ##   ##  ##     ## ##    ##  ##     ##  ##   ##  
+##        ##   ##  ##     ##    ##    ##     ## ##     ##        ##   ##        ##     ## ##     ##   ## ##            ##   ##     ##        ## ##    ##  ##     ##   ## ##   
+##       ##     ## ########     ##    ##     ## ########        ##    ########   #######  ########     ###             ##   ##     ##  #######  ##    ##  ########     ###    
+##       ######### ##           ##    ##     ## ##             ##     ##     ## ##     ## ##          ## ##            ##   ##     ## ##        ######### ##          ## ##   
+##       ##     ## ##           ##    ##     ## ##             ##     ##     ## ##     ## ##         ##   ##           ##    ##   ##  ##              ##  ##         ##   ##  
+######## ##     ## ##           ##     #######  ##             ##      #######   #######  ##        ##     ##        ######   #####   #########       ##  ##        ##     ## 
+
+*/
+
+@media screen and (min-width: 768px) and (max-width: 1020px)
+{
+	
+	header
+	{
+		display: flex;
+		width: auto;
+		border: 2px solid black;
+		border-bottom: none;
+		margin-left: 80px;
+		max-width: 1024px;
+	}
+	
+	.header
+	{
+		height: 210px;
+		padding-left: 30px;
+		margin: 0em;
+		font-size: 1.5em;
+		width: 70%;
+		
+	}
+	
+	figure
+	{
+		
+		background-color: #2a72d6;
+		margin: 0em;
+		padding: 0em;
+		width: 30%;
+		max-width: auto;
+		max-height: auto;
+	}
+	
+	.photo
+	{
+		justify-content: center;
+		align-content: center;
+		object-fit: cover;
+		max-width: 200px;
+		max-height: 160px;
+	}
+	
+	.header__titre
+	{
+		color: #2a72d6;
+		border-bottom: 0em;
+	}
+	
+	.prenom
+	{
+		color: #2a72d6;
+		background-color: white;
+	}
+	
+	span
+	{
+		border-bottom: 3px solid #2a72d6;	
+	}
+	
+	
+	
+	.lisere
+	{
+		display: flex;
+		flex-direction: column;
+		background-color: #2a72d6;
+		border-left: 2px solid black;
+		border-bottom: 2px solid black;
+		border-top: none;
+		border-right: none;
+		height: auto;
+		border-top: hidden;
+		width: 30%;
+		
+	}
+	
+	.lisere h3
+	{
+		background-color: #061F40;
+		text-align: center;
+		line-height: 40px;
+		height: 50px;
+		color: #96A4B6;
+		font-weight: bold;
+	}
+	
+	
+	.info
+	{
+		list-style-type: none;
+		justify-items: start;
+		padding: 5%;
+		text-align: justify;
+		line-height: 150%;
+	}
+	
+	.info strong
+	{
+		text-decoration: underline black;
+		font-weight: bold;
+	}
+	
+	.hobby
+	{
+		position: relative;
+		vertical-align: bottom;
+		margin-top: 580px;
+	}
+	
+	.icones
+	{
+		display: flex;
+		justify-content: space-between;
+		top: 50%;
+		margin-top: 10px;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	
+	.main
+	{
+		display: flex;
+		flex-direction: column;
+		padding-left: 30px;
+		width: 700px;
+		border: 2px solid black;
+		height: 1508px;
+		border-top: none;
+		border-left: none;
+		width: 70%;
+		
+	}
+	
+	
+	.main h3
+	{
+		display: flex;
+		flex-direction: row;
+		border-bottom: solid #2a72d6;
+		margin-right: 5%;
+		line-height: 1.5em;
+		font-size: 2em;
+	}
+	
+	.main .section
+	{
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.section__item
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: auto;
+		margin-top: 2px;
+	}
+	
+	.icones__dot
+	{
+		margin-right: 1em;
+		align-content: center;
+		margin-top: 0em;
+	}
+	
+	.section__item__date
+	{
+		display: flex;
+		flex-direction: column;
+		width: 30%;
+		font-size: 1em;
+	}
+	
+	.section__item__date p
+	{
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	.section article
+	{
+		margin: 15px;
+	}
+	
+	.section__item h4
+	{
+		font-size: 1.5em;
+		vertical-align: top;
+		margin: 0px;
+		padding: 0%;
+	}
+	
+	.section__item h5
+	{
+		font-size: 1.05em;
+		font-style: italic;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		font-family: "Montserrat";
+		font-weight: normal;
+	}
+	.section__item__description
+	{
+		display: flex;
+		flex-direction: column;
+		width: 70%;
+		padding: 0px;
+		margin: 0px;
+		margin-top: 0px;
+		margin-block-start: 0px;
+		margin-block-end: 0px;
+	}
+	
+	.section__item__description p
+	{
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	.section__recommandations div
+	{
+		display: flex;
+		flex-direction: row;
+		align-content: space-between;
+	}
+	
+	.section__recommandations article
+	{
+		width: max-content;
+		margin-right: 40px;
+		margin-bottom: 20px;
+	}
+	
+	
+	.main .fas
+	{
+		color: #2a72d6;
+		margin-right: 10px;
+		margin-top: 5px;
+	}
+	
+	.main .far
+	{
+		color: #2a72d6;
+		margin-right: 10px;
+		margin-top: 5px;
+	}
+	
+	.all
+	{
+		display: flex;
+		font-family: "MontSerrat";
+		margin-left: 80px;
+		max-width: 1024px;
+	}
+	
+}
 /*
 
 ########    ###    ########  ##       ######## ######## 
@@ -401,7 +789,7 @@ span
 		color: black;
 		height: auto;	
 	}
-
+	
 	.lisere .info
 	{
 		text-align: center;
@@ -444,7 +832,7 @@ span
 		margin-top: 2px;
 		width: auto;
 	}
-
+	
 	.section__recommandations ul
 	{
 		width: 300px;
@@ -483,7 +871,7 @@ span
 {
 	header
 	{
-		width: 400px;
+		width: auto;
 		max-width: 425px;
 		display: flex;
 		flex-direction: column;
@@ -494,19 +882,27 @@ span
 		overflow: hidden;
 	}
 	
+	.header
+	{
+		margin-top: 50px;
+		text-align: center;
+		max-width: 425px;
+		padding: 0em;
+	}
 	figure
 	{
 		background-position: left;
-		width: 400px;
+		width: auto;
 		max-width: 425px;
 	}
 	
 	.all
 	{
 		max-width: 425px;
-		width: 400px;
+		width: auto;
 		line-height: 50px;
 		overflow: hidden;
+		margin: auto;
 	}
 	
 	.all h3
@@ -522,13 +918,17 @@ span
 		line-height: 40px;
 		font-size: 0.8rem;
 		padding: 0em;
-		width: 400px;
+		width: auto;
 		margin: 5px;
 		max-width: 425px;
 		margin-right: 0px;
 		margin-left: 0px;
 	}
 	
+	.section h5
+	{
+		font-size: 1.2em;
+	}
 	.icones__dot
 	{
 		display: none;
@@ -540,7 +940,7 @@ span
 		display: flex;
 		flex-direction: column;
 		
-	
+		
 		max-width: 300px;
 	}
 	
@@ -548,7 +948,7 @@ span
 	{
 		margin: 5px;
 		
-		width: 400px;
+		width: auto;
 		height: 300px;
 		max-width: 425px;
 	}
@@ -570,11 +970,27 @@ span
 	{
 		line-height: 2.2em;
 	}
-
+	
+	.main .section__item__date
+	{
+		line-height: 2em;
+		display: flex;
+		flex-direction: row;
+		max-width: 425px;
+		width: 150px;
+	}
+	
+	.section__item__date p
+	{
+		
+		margin-right: 10px;
+		
+	}
+	
 	.section__item__description
 	{
-		width: 400px;
-	
+		width: auto;
+		
 	}
 	
 	.section__item__description p
@@ -582,11 +998,11 @@ span
 		width: 350px;
 		line-height: 2.2em;
 	}
-
+	
 	.section__item__description h5
 	{
 		width: 350px;
-
+		
 	}
 	.section__recommandations div
 	{
@@ -601,17 +1017,33 @@ span
 	{
 		margin: 5px;
 		margin-left: 0px;
+		font-size: 1.2em;
 	}
-
+	
 	.section__recommandations li
 	{
 		line-height: 2.2em;
 	}
-
+	
 	.lisere
 	{
 		display: flex;
 		flex-direction: column;
+		align-items: left;
+	}
+	
+	.lisere section{
+		margin-left: 0px;
+	}
+	
+	.lisere .info
+	{
+		text-align: justify;
+		max-width: 400px;
+		width: 380px;
+		padding: 10px;
+		overflow: auto;
+		
 	}
 	
 	.lisere h3
@@ -620,14 +1052,16 @@ span
 		background-color: white;
 		margin-left: 20px;
 		margin-right: 20px;
+		text-align: justify;
+		font-size: 1.5em;
 	}
 	
-	.lisere section
+	.lisere strong
 	{
-		height: auto;
-		width: 400px;
+		font-size: 1.2em;
 		
 	}
+	
 	
 	.lisere li
 	{
@@ -641,86 +1075,17 @@ span
 	
 	.icones
 	{
-		width: 350px;
+		width: auto;
 		text-align: center;
 		max-width: 425px;
 		display: flex;
 		margin-left: 20px;
 		margin-right: 20px;
+		justify-content: stretch;
+	}
+	
+	.icones li
+	{
+		margin-right: 40px;
 	}
 }
-	
-	/*
-	
-	########  ####  ######      ########  ########  ######  ##    ## ########  #######  ########  
-	##     ##  ##  ##    ##     ##     ## ##       ##    ## ##   ##     ##    ##     ## ##     ## 
-	##     ##  ##  ##           ##     ## ##       ##       ##  ##      ##    ##     ## ##     ## 
-	########   ##  ##   ####    ##     ## ######    ######  #####       ##    ##     ## ########  
-	##     ##  ##  ##    ##     ##     ## ##             ## ##  ##      ##    ##     ## ##        
-	##     ##  ##  ##    ##     ##     ## ##       ##    ## ##   ##     ##    ##     ## ##        
-	########  ####  ######      ########  ########  ######  ##    ##    ##     #######  ##        
-	
-	*/
-	
-	@media screen and (min-width: 1440px)
-	{
-		header
-		{
-			width: 1600px;
-		}
-		.header
-		{
-			font-size: 2em;
-			height: 320px;
-			padding-left: 30px;
-			width: 1200px;
-		}
-		
-		figure
-		{
-			object-fit: cover;
-			width: 743px;
-			background-position: center;
-		}
-
-		img{
-			width: 400px;
-			height: 200px;
-			margin-top: 10%;
-			margin-bottom: 10%;
-		}
-
-		.main
-		{
-			font-size: 1.5em;
-			width: 970px;
-			margin-right: 0px;
-			height: auto;
-		}
-
-		.lisere
-		{
-			font-size: 2em;
-			height: auto;
-			width: 20%;
-			margin-left: 80px;
-			
-		}
-
-		.icones
-		{
-			font-size: 0.7em;
-			margin: 5px;
-		}
-
-		.section__recommandations article
-		{
-			margin: 20px;
-			padding: 20px;
-		}
-
-		.section
-		{
-			margin-bottom: 70px;
-		}
-	}
