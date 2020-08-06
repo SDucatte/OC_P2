@@ -429,7 +429,7 @@ span
 	{
 		flex-grow: unset;
 	}
-	
+
 	.section__recommandations article
 	{
 		margin: auto;
@@ -460,23 +460,14 @@ span
 @media screen and (min-width: 768px) and (max-width: 1020px)
 {
 	
-	header
-	{
-		display: flex;
-		width: auto;
-		border: 2px solid black;
-		border-bottom: none;
-		margin-left: 80px;
-		max-width: 1024px;
-	}
 	
 	.header
 	{
-		height: 210px;
+		height: 240px;
 		padding-left: 30px;
 		margin: 0em;
 		font-size: 1.5em;
-		width: 70%;
+		width: 100%;
 		
 	}
 	
@@ -524,14 +515,10 @@ span
 		display: flex;
 		flex-direction: column;
 		background-color: #2a72d6;
-		border-left: 2px solid black;
-		border-bottom: 2px solid black;
-		border-top: none;
+		border: 2px solid black;
 		border-right: none;
 		height: auto;
-		border-top: hidden;
 		width: 30%;
-		
 	}
 	
 	.lisere h3
@@ -585,7 +572,6 @@ span
 		width: 700px;
 		border: 2px solid black;
 		height: 1508px;
-		border-top: none;
 		border-left: none;
 		width: 70%;
 		
