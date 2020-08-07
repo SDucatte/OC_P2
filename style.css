@@ -514,7 +514,6 @@ span
 		display: flex;
 		flex-direction: column;
 		background-color: #2a72d6;
-		border: 2px solid black;
 		border-right: none;
 		height: auto;
 		width: 30%;
@@ -569,7 +568,6 @@ span
 		flex-direction: column;
 		padding-left: 30px;
 		width: 700px;
-		border: 2px solid black;
 		border-left: none;
 		width: 70%;
 		
@@ -695,8 +693,10 @@ span
 	{
 		display: flex;
 		font-family: "MontSerrat";
-		margin-left: 80px;
+		margin-left: 40px;
+		margin-right: 40px;
 		max-width: 1024px;
+		border: 1px solid black;
 	}
 	
 }
@@ -712,51 +712,44 @@ span
 
 */
 
-@media screen and (max-width: 768px)
+@media screen and (min-width: 480px) and (max-width: 768px)
 {
-	.photo_lisere
-	{
-		display: none;
-	}
-
-	.photo_main
-	{
-		width: 100px;
-		height: 120px;
-		background-position: right;
-	}
-	
 	.all
 	{
 		display: flex;
 		flex-direction: column;
-		width: 680px;
-		margin-left: 40px;
-		margin-right: 20px;
+		width: auto;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+		border: 1px solid black;
+		align-items: center;
 	}
 	
 	.lisere
 	{
 		order: 2;
-		display: flex;
-		flex-direction: column;
-		width: 30%;
-		margin-left: 0em;
 		margin-top: 0px;
 		background-color: white;
-		align-items: left;
+		align-items: center;
 		padding-left: 5px;
 		border: hidden;
 		height: auto;
 	}
 	
+	.photo_lisere
+	{
+		display: none;
+	}
+
+
 	.lisere section
 	{
 		display: flex;
 		flex-direction: column;
 		padding: 0px;
 		margin: 10px;
-		width: 620px;
+		width: 580px;
 		height: auto;
 	}
 	
@@ -775,7 +768,8 @@ span
 	.main
 	{
 		order: 1;
-		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
 		margin-bottom: 0px;
 		border-bottom: 0px;
 		padding: 10px;
@@ -784,25 +778,68 @@ span
 		font-size: 1em;
 	}
 	
-	.main h1
+	.photo_main
 	{
-		margin-bottom: 0px;
+		display: block;
+		width: 440px;
+		height: 250px;
+		background-color: white;
+		order: 1;
+	}
+	
+	.header
+	{
+		display: flex;
+		flex-flow: row wrap;
+		max-width: 760px;
+		justify-content: center;
+		min-height: 350px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 100px;
 	}
 
-	.main h2
+	.header img
+	{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	figure{
+		width: auto;
+	}
+
+	.header h1
+	{
+		margin-bottom: 0px;
+		margin-top: 10px;
+		order: 2;
+		font-size: 1.5em;
+		text-align: center;
+	}
+
+	.header h2
 	{
 		margin-top: 15px;
+		margin-bottom: 15px;
+		order: 3;
+		text-align: center;
+		font-size: 1.2em;
 	}
 
 	.main h3
 	{
 		margin-bottom: 12px;
 		font-size: 1.5em;
+		min-width: 500px;
+		max-width: 600px;
 	}
 	
 	.main .section
 	{
 		margin-top: 60px;
+
 	}
 	.section__item
 	{
@@ -818,8 +855,8 @@ span
 	
 	.section__recommandations article
 	{
-		margin: 20px;
-		padding: 5px;
+		padding: 10px;
+		margin: 0px;
 		margin-top: 2px;
 		width: auto;
 	}
@@ -839,6 +876,7 @@ span
 	{
 		line-height: 1.6em;
 	}
+
 	.icones
 	{
 		display: flex;
