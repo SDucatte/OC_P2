@@ -457,7 +457,7 @@ span
 
 */
 
-@media screen and (min-width: 768px) and (max-width: 1020px)
+@media screen and (min-width: 769px) and (max-width: 1020px)
 {
 	
 	
@@ -712,29 +712,31 @@ span
 
 */
 
-@media screen and (min-width: 480px) and (max-width: 768px)
+@media screen and (min-width: 501px) and (max-width: 769px)
 {
 	.all
 	{
 		display: flex;
 		flex-direction: column;
-		width: auto;
-		height: auto;
-		margin-left: auto;
-		margin-right: auto;
-		border: 1px solid black;
-		align-items: center;
+		justify-content: center;
+		max-width: 769px;
+		width: 720px;
+		border: none;
+		margin-left: 40px;
 	}
 	
 	.lisere
 	{
-		order: 2;
+		order: 3;
 		margin-top: 0px;
 		background-color: white;
-		align-items: center;
-		padding-left: 5px;
+		justify-content: center;
+		padding-left: 10px;
+		margin-left: 5px;
+		margin-left: 5px;
 		border: hidden;
-		height: auto;
+		width: 90%;
+		max-width: 765px;
 	}
 	
 	.photo_lisere
@@ -748,8 +750,9 @@ span
 		display: flex;
 		flex-direction: column;
 		padding: 0px;
-		margin: 10px;
-		width: 580px;
+		margin-left: 5px;
+		margin-right: 5px;
+		max-width: 700px;
 		height: auto;
 	}
 	
@@ -757,27 +760,48 @@ span
 	{
 		background-color: #2a72d6;
 		color: black;
-		height: auto;	
+		height: auto;
+		font-size: 6.5vw;
 	}
 	
 	.lisere .info
 	{
 		text-align: center;
+		font-size: 4vw;
 	}
 	
+	.icones
+	{
+		display: flex;
+	}
+
+	.hobby
+	{
+		margin-top: 20px;
+		max-width: 750px;
+		width: auto;
+	}
+
 	.main
 	{
 		order: 1;
-		margin-left: auto;
-		margin-right: auto;
+		margin-left: 5px;
+		margin-right: 5px;
 		margin-bottom: 0px;
 		border-bottom: 0px;
 		padding: 10px;
 		border: hidden;
 		height: auto;
 		font-size: 1em;
+		max-width: 765px;
+		width: 90%;
 	}
 	
+	.icones__dot
+	{
+		display: none;
+	}
+
 	.photo_main
 	{
 		display: block;
@@ -793,20 +817,16 @@ span
 		flex-flow: row wrap;
 		max-width: 760px;
 		justify-content: center;
+		align-items: center;
 		min-height: 350px;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 100px;
+		margin-left: 5px;
+		margin-right: 5px;
+		margin-bottom: 40px;
+		height: auto;
 	}
 
-	.header img
+	figure
 	{
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	figure{
 		width: auto;
 	}
 
@@ -815,7 +835,7 @@ span
 		margin-bottom: 0px;
 		margin-top: 10px;
 		order: 2;
-		font-size: 1.5em;
+		font-size: 8vw;
 		text-align: center;
 	}
 
@@ -825,34 +845,59 @@ span
 		margin-bottom: 15px;
 		order: 3;
 		text-align: center;
-		font-size: 1.2em;
+		font-size: 7vw;
 	}
 
 	.main h3
 	{
 		margin-bottom: 12px;
-		font-size: 1.5em;
-		min-width: 500px;
-		max-width: 600px;
+		font-size: 6.5vw;
+		min-width: 425px;
+		max-width: 650px;
 	}
 	
 	.main .section
 	{
 		margin-top: 60px;
-
 	}
 	.section__item
 	{
-		justify-content: center;
-		width: 600px;	
+		max-width: 750px;	
+		display: flex;
 	}
 	
+	.section__item h4
+	{
+		font-size: 5.5vw;
+		margin-bottom: 5px;
+	}
+
+	.section__item h5
+	{
+		font-size: 4.5vw;
+		
+	}
 	.main .section__item__date
 	{
-		width: 120px;
+		max-width: 120px;
+		width: auto;
 		margin-right: 25px;
+		text-align: left;
+		font-size: 4vw;
+	}
+
+	.section__item__date p
+	{
+		margin-bottom: 5px;
+		margin-top: 5px;
 	}
 	
+	.section__recommandations h3
+	{
+		margin-bottom: 12px;
+		font-size: 6.5vw;
+		max-width: 415px;
+	}
 	.section__recommandations article
 	{
 		padding: 10px;
@@ -861,27 +906,40 @@ span
 		width: auto;
 	}
 	
-	.section__recommandations ul
-	{
-		width: 300px;
-		line-height: 1.6em;
-	}
-	
 	.section__item__description
 	{
-		width: 720px;	
+		max-width: 750px;	
 	}
 	
+	.section__item__description ul
+	{
+		line-height: 2em;
+		font-size: 4vw;
+	}
 	.section__item__description p
 	{
 		line-height: 1.6em;
+		font-size: 4vw;
 	}
 
-	.icones
+	.section__recommandations div
 	{
 		display: flex;
-		flex-flow: wrap row;
+		flex-direction: column;
+		
 	}
+
+	.section__recommandations h4
+	{
+		font-size: 5.5vw;
+	}
+	.section__recommandations ul
+	{
+		max-width: 750px;
+		line-height: 2em;
+		font-size: 4vw;
+	}
+
 }
 
 /*
@@ -896,50 +954,27 @@ span
 
 */
 
-@media screen and (max-width: 425px)
+@media screen and (max-width: 500px)
 {
-	header
-	{
-		width: auto;
-		max-width: 425px;
-		display: flex;
-		flex-direction: column;
-		text-align: left;
-		height: 350px;
-		margin: 0px;
-		font-size: 1rem;
-		overflow: hidden;
-	}
-	
-	.header
-	{
-		margin-top: 50px;
-		text-align: center;
-		max-width: 425px;
-		padding: 0em;
-	}
-	figure
-	{
-		background-position: left;
-		width: auto;
-		max-width: 425px;
-	}
-	
+
 	.all
 	{
-		max-width: 425px;
+		display: flex;
+		flex-direction: column;
+		max-width: 500px;
 		width: auto;
 		line-height: 50px;
-		overflow: hidden;
-		margin: auto;
+		margin-left: 20px;
+		margin-right: 20px;
+		overflow-x: hidden;
 	}
+
 	
 	.all h3
 	{
-		font-size: 1.5rem;
-		margin-left: 30px;
+		font-size: 6.5vw;
 	}
-	
+
 	.main
 	{
 		display: flex;
@@ -949,43 +984,104 @@ span
 		padding: 0em;
 		width: auto;
 		margin: 5px;
-		max-width: 425px;
+		max-width: 500px;
 		margin-right: 0px;
 		margin-left: 0px;
+		border: none;
+		font-size: 5vw;
+		order: 1;
+	}
+
+	.photo_main
+	{
+		display: none
+
 	}
 	
+	.header
+	{
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		width: 100%;
+		max-width: 320px;
+		padding: 0em;
+		height: auto;
+	
+	}
+
+	.header h1
+	{
+		order: 2;
+		font-size: 8vw;
+		margin-bottom: 15px;
+		text-align: start;
+		max-width: 320px;
+		width: 320px;
+	}
+
+	.header h2
+	{
+		order: 3;
+		font-size: 7vw;
+		max-width: 320px;
+		width: 320px;
+		text-align: start;
+		overflow: auto;
+	}
+
+	.section h4
+	{
+		font-size: 5.5vw;
+	}
+
 	.section h5
 	{
-		font-size: 1.2em;
+		font-size: 4.5vw;
+		overflow: auto;
+	
+		line-height: 1.5em;
+		max-width: 320px;
 	}
+
+	.section p
+	{
+		font-size: 4vw;
+		height: auto;
+		max-width: 320px;
+	}
+
+	.section li
+	{
+		font-size: 4vw;
+		max-width: 320px;
+	}
+
 	.icones__dot
 	{
 		display: none;
 	}
 	
+	.section
+	{
+		text-align: start;
+		max-width: 500px;
+		min-width: 300px;
+		margin-top: 20px;
+	}
+
 	.section__item
 	{
-		width: 250px;
 		display: flex;
 		flex-direction: column;
-		
-		
-		max-width: 300px;
+		height: auto;
 	}
 	
 	.section__item article
 	{
 		margin: 5px;
-		
 		width: auto;
-		height: 300px;
-		max-width: 425px;
-	}
-	
-	.section__item div
-	{
-		margin-right: 10px;
-		margin-left: 10px;
+		text-align: center
 	}
 	
 	.section__item h5
@@ -993,96 +1089,111 @@ span
 		line-height: 1.5em;
 		margin-top: 10px;
 		margin-bottom: 10px;
+		text-align: left;
 	}
 	
 	.section__item li
 	{
 		line-height: 2.2em;
+		text-align: center;
+		max-width: 320px;
+		width: auto;
 	}
 	
-	.main .section__item__date
+	.section__item__date
 	{
-		line-height: 2em;
 		display: flex;
-		flex-direction: row;
-		max-width: 425px;
-		width: 150px;
+		flex-direction: column;
+		max-width: 320px;
 	}
-	
+
 	.section__item__date p
 	{
-		
-		margin-right: 10px;
-		
+		margin-left: 0px;
+		margin-right: 20px;
+		min-width: 220px;
 	}
-	
-	.section__item__description
+
+	.section__item__description li
 	{
+		text-align: left;
+		min-width: 300px;
+		max-width: 500px;
 		width: auto;
-		
 	}
-	
-	.section__item__description p
+
+	.section__recommandations h3
 	{
-		width: 350px;
-		line-height: 2.2em;
+		justify-content: start;
+		max-width: 320px;
+		width: 320px;
 	}
-	
-	.section__item__description h5
-	{
-		width: 350px;
-		
-	}
+
 	.section__recommandations div
 	{
 		display: flex;
 		flex-direction: column;
-		align-items: left;
 		margin-top: 0px;
 		padding-top: 0px;
+		
 	}
-	
+
 	.section__recommandations h4
 	{
 		margin: 5px;
 		margin-left: 0px;
-		font-size: 1.2em;
+		font-size: 5.5vw;
+	
 	}
 	
 	.section__recommandations li
 	{
 		line-height: 2.2em;
+		font-size: 4vw;
 	}
 	
 	.lisere
 	{
 		display: flex;
 		flex-direction: column;
-		align-items: left;
+		text-align: center;
+		order: 2;
+		border: none;
+		width: auto;
+		max-width: 320px;
+		background-color: white;
+		font-size: 5vw;
 	}
-	
+
+	.photo_lisere
+	{
+		display: none;
+	}
+
 	.lisere section{
 		margin-left: 0px;
+		margin-top: 20px;
 	}
 	
 	.lisere .info
 	{
-		text-align: justify;
-		max-width: 400px;
-		width: 380px;
+		
+		max-width: 320px;
+		width: auto;
 		padding: 10px;
-		overflow: auto;
+		text-align: center;
 		
 	}
 	
 	.lisere h3
 	{
-		border-bottom: solid #2a72d6 3px;
-		background-color: white;
+		background-color: #2a72d6;
+		max-width: 320px;
 		margin-left: 20px;
 		margin-right: 20px;
-		text-align: justify;
+		text-align: center;
 		font-size: 1.5em;
+		color: black;
 	}
 	
 	.lisere strong
@@ -1095,26 +1206,47 @@ span
 	.lisere li
 	{
 		line-height: 40px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		font-size: 4vw;
 	}
 	
 	.lisere p
 	{
 		line-height: 40px;
+		font-size: 4vw;
 	}
 	
 	.icones
 	{
 		width: auto;
-		text-align: center;
-		max-width: 425px;
+		align-items: center;
+		max-width: 320px;
 		display: flex;
-		margin-left: 20px;
-		margin-right: 20px;
-		justify-content: stretch;
+		
+		flex-direction: column;
+
 	}
-	
-	.icones li
+
+
+}
+
+/*
+ 
+ ########  #######   #######      ######  ##     ##    ###    ##       ##           ######   ######  ########  ######## ######## ##    ## 
+    ##    ##     ## ##     ##    ##    ## ###   ###   ## ##   ##       ##          ##    ## ##    ## ##     ## ##       ##       ###   ## 
+    ##    ##     ## ##     ##    ##       #### ####  ##   ##  ##       ##          ##       ##       ##     ## ##       ##       ####  ## 
+    ##    ##     ## ##     ##     ######  ## ### ## ##     ## ##       ##           ######  ##       ########  ######   ######   ## ## ## 
+    ##    ##     ## ##     ##          ## ##     ## ######### ##       ##                ## ##       ##   ##   ##       ##       ##  #### 
+    ##    ##     ## ##     ##    ##    ## ##     ## ##     ## ##       ##          ##    ## ##    ## ##    ##  ##       ##       ##   ### 
+    ##     #######   #######      ######  ##     ## ##     ## ######## ########     ######   ######  ##     ## ######## ######## ##    ## 
+ 
+*/
+
+@media screen and (max-width: 319px)
+{
+	.all
 	{
-		margin-right: 40px;
+		display: none;
 	}
 }
