@@ -768,6 +768,7 @@ span
 	{
 		text-align: center;
 		font-size: 4vw;
+		line-height: 2em;
 	}
 	
 	.icones
@@ -918,7 +919,7 @@ span
 	}
 	.section__item__description p
 	{
-		line-height: 1.6em;
+		line-height: 2em;
 		font-size: 4vw;
 	}
 
@@ -1182,6 +1183,7 @@ span
 		width: auto;
 		padding: 10px;
 		text-align: center;
+		line-height: 2em;
 		
 	}
 	
