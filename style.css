@@ -840,7 +840,6 @@ span
 		flex-flow: wrap row;
 	}
 }
-
 /*
 
 ########  ##     ##  #######  ##    ## ######## 
@@ -855,7 +854,57 @@ span
 
 @media screen and (max-width: 425px)
 {
-	header
+	
+	
+	.header
+	{
+		height: 240px;
+		padding-left: 30px;
+		margin: 0em;
+		font-size: 1.5em;
+		width: 100%;
+	}
+	
+	figure
+	{
+		
+		background-color: #2a72d6;
+		margin: 0em;
+		padding: 0em;
+		width: 30%;
+		max-width: auto;
+		max-height: auto;
+	}
+	
+	.photo
+	{
+		justify-content: center;
+		align-content: center;
+		object-fit: cover;
+		max-width: 200px;
+		max-height: 160px;
+	}
+	
+	.header__titre
+	{
+		color: #2a72d6;
+		border-bottom: 0em;
+	}
+	
+	.prenom
+	{
+		color: #2a72d6;
+		background-color: white;
+	}
+	
+	span
+	{
+		border-bottom: 3px solid #2a72d6;	
+	}
+	
+	
+	
+	.lisere
 	{
 		width: auto;
 		max-width: 425px;
@@ -917,7 +966,9 @@ span
 	}
 	.icones__dot
 	{
-		display: none;
+		margin-right: 1em;
+		align-content: center;
+		margin-top: 0em;
 	}
 	
 	.section__item
